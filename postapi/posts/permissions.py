@@ -2,8 +2,8 @@ from rest_framework.permissions import BasePermission, SAFE_METHODS
 
 class IsOwnerIP(BasePermission):
     """
-    Umożliwia modyfikację rekordu wyłącznie przez autora (sprawdzany przez adres IP).
-    Dostęp do metod bezpiecznych (GET, HEAD, OPTIONS) jest otwarty.
+    Allows modification of a record only by its owner, verified by the IP address.
+    Access to safe methods (GET, HEAD, OPTIONS) is granted to all users.
     """
     def has_object_permission(self, request, view, obj):
         if request.method in SAFE_METHODS:
