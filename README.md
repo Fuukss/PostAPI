@@ -28,14 +28,6 @@ PostAPI to usługa REST API stworzona w oparciu o Django oraz Django REST Framew
 - **Historia modyfikacji:**  
   Wszystkie zmiany są zapisywane, co umożliwia odtworzenie poprzedniego stanu posta.
 
-## Wymagania
-
-- Python 3.8+
-- Django (np. wersja 3.x lub 4.x)
-- Django REST Framework
-- Domyślnie SQLite (można zmienić w ustawieniach)
-- pytest oraz pytest-django (do testowania projektu)
-
 ## Instalacja
 
 ### 1. Klonowanie repozytorium
